@@ -66,15 +66,31 @@
     color: white;
 }
 
-#dish_title, #footer_title {
+#footer_title {
     color:rgb(41, 171, 231);
     font-size: 1.3em;
+}
+
+#dish_title {
+    color: rgb(217, 220, 20);
+    font-size: 1.3em;
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
 .menu > img {
     height: 100px;
     width: auto;
 }
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px rgb(145, 195, 207), 0 0 20px #fff, 0 0 30px #009de6, 0 0 40px #009de6, 0 0 50px #009de6, 0 0 60px #009de6, 0 0 70px #009de6;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #009de6, 0 0 40px #009de6, 0 0 50px #009de6, 0 0 60px #009de6, 0 0 70px #009de6, 0 0 80px #009de6;
+    }
+  }
 
 .footer {
     display: flex;
